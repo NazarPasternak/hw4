@@ -8,7 +8,7 @@ export default function UserDetails2(props) {
     }, [state]);
 
     return (
-        <div>
+        <div>sfbefbsgf
             {
                 user.username
             }
