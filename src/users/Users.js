@@ -11,20 +11,20 @@ export default function Users() {
 
     useEffect(()=>{
         getUsers().then(value => setUsers([...value.data]))
+        // getUsers().then(value => console.log(value.data))
 
     }, [])
 
     return(
         <div>
+
             {/*{users.map(value => <User key={value.id} item={value}/>)}*/}
             {/*<Route path={'posts/:id'} component={PostDetails}/>*/}
-
             {users.map(value => <User key={value.id} item={value}/>)}
 
             <Switch>
-                <Route path={'users/:id'} components={UserDetails}/>
+                <Route path={'/users/:id'} component={UserDetails}/>
             </Switch>
-
         </div>
 
     )

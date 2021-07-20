@@ -14,11 +14,41 @@ export default function App () {
                 </div>
 
                 <Switch>
-                    <Route  path={'/users'} component={Users}/>
-                    {/*<Route  path={'/comments'} component={Comments}/>*/}
+                    <Route path={'/users'} component={Users}/>
+                    <Route path={'/comments'} component={Comments}/>
                 </Switch>
             </Router>
 
         </div>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
